@@ -90,21 +90,27 @@ $GLOBALS['TL_DCA']['tl_run'] = array
 		(
 			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
-    'runnerid' => array
+    		'runnerid' => array
 		(
 			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
 		'start' => array
 		(
-			'sql'                     => "varchar(10) NOT NULL default ''"
+			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
-    'ziel' => array
+    		'ziel' => array
 		(
-			'sql'                     => "varchar(10) NOT NULL default ''"
+			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
-    'runtime' => array
+    		'runtime' => array
 		(
-			'sql'                     => "varchar(10) NOT NULL default ''"
+			'sql'                    => "int(10) unsigned NOT NULL default '0'"
+		),
+		'nickname' => array
+		(
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>64, 'tl_class'=>'w50'),
+			'sql'                     => "varchar(64) NOT NULL default ''"
 		),
 	)
 );
