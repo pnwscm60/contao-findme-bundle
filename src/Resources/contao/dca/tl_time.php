@@ -90,17 +90,17 @@ $GLOBALS['TL_DCA']['tl_time'] = array
 		(
 			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
-    'runnerid' => array
+    		'runnerid' => array
 		(
 			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
 		'typ' => array
 		(
-			'sql'                     => "varchar(10) NOT NULL default ''"
+			'sql'                     => "int(1) unsigned NOT NULL default '0'"
 		),
-    'timecode' => array
+    		'timecode' => array
 		(
-			'sql'                     => "varchar(10) NOT NULL default ''"
+			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
 	)
 );
