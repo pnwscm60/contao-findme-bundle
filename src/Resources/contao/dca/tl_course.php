@@ -90,14 +90,14 @@ $GLOBALS['TL_DCA']['tl_course'] = array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_course']['aktivvon'],
 			'inputType'               => 'text',
-			'eval'                    => array('mandatory'=>false, 'unique'=>false,'tl_class'=>'w50'),
+			'eval'                    => array('tl_class'=>'w50'),
 			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
-    'aktivbis' => array
+    		'aktivbis' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_course']['aktivbis'],
 			'inputType'               => 'text',
-			'eval'                    => array('mandatory'=>false, 'unique'=>false,'tl_class'=>'w50'),
+			'eval'                    => array('tl_class'=>'w50'),
 			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
 		'title' => array
@@ -108,10 +108,10 @@ $GLOBALS['TL_DCA']['tl_course'] = array
 			'sorting'                 => true,
 			'flag'                    => 11,
 			'search'                  => true,
-			'eval'                    => array('mandatory'=>true, 'unique'=>false, 'maxlength'=>255, 'tl_class'=>'w50'),
+			'eval'                    => array('maxlength'=>255, 'tl_class'=>'w50'),
 			'sql'                     => "varchar(128) NOT NULL default ''"
 		),
-    'ort' => array
+    		'ort' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_course']['ort'],
 			'inputType'               => 'text',
@@ -119,23 +119,19 @@ $GLOBALS['TL_DCA']['tl_course'] = array
 			'sorting'                 => true,
 			'flag'                    => 11,
 			'search'                  => true,
-			'eval'                    => array('mandatory'=>true, 'unique'=>false, 'maxlength'=>255, 'tl_class'=>'w50'),
+			'eval'                    => array('maxlength'=>128, 'tl_class'=>'w50'),
 			'sql'                     => "varchar(128) NOT NULL default ''"
 		),
-    'posten' => array
+    		'posten' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_course']['posten'],
 			'inputType'               => 'text',
-			'exclude'                 => true,
-			'sorting'                 => true,
-			'flag'                    => 11,
-			'search'                  => true,
-			'eval'                    => array('mandatory'=>true, 'unique'=>false, 'maxlength'=>255, 'tl_class'=>'w50'),
-			'sql'                     => "varchar(128) NOT NULL default ''"
+			'eval'                    => array('maxlength'=>255, 'tl_class'=>'w50'),
+			'sql'                     => "varchar(255) NOT NULL default ''"
 		),
     'creatorid' => array
 		(
-			'sql'                     => "int(10) unsigned NOT NULL auto_increment"
+			'sql'                     => "int(10) unsigned NOT NULL default '0'"
 		),
 	)
 );
