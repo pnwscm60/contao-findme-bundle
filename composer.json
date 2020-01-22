@@ -1,5 +1,5 @@
 {
-    "name": "pnwscm60/contao-concerto-bundle",
+    "name": "pnwscm60/contao-findme-bundle",
     "type": "contao-bundle",
     "description": "Concerto extension für Contao",
     "license": "LGPL-3.0-or-later",
